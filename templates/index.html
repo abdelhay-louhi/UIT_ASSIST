@@ -3,64 +3,45 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>UIT Assist</title>
+  <title>Chatbot</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-
-<body class = "flex justify-center items-center h-screen bg-var(--body-bg) font-sans">
-  
-  
+<body>
   <!-- partial:index.partial.html -->
-  <section class="msger flex flex-col flex-wrap justify-between w-full max-w-867px m-10px h-calc(100vh - 50px) border-var(--border) rounded-5px bg-var(--msger-bg) shadow-md">
-
-    
-    
+  <section class="msger">
     <header class="msger-header">
-      
       <div class="msger-header-title">
-        UIT Assist 
+        <i class="fas fa-bug"></i> Chatbot <i class="fas fa-bug"></i>
       </div>
-      
     </header>
 
     <main class="msger-chat">
-    </div>
-
       <div class="msg left-msg">
         <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
 
         <div class="msg-bubble">
           <div class="msg-info">
-            <div class="msg-info-name">UIT Assist</div>
-            
+            <div class="msg-info-name">Chatbot</div>
             <div class="msg-info-time">12:45</div>
           </div>
 
           <div class="msg-text">
-            Salut, bienvenue chez UIT Assist ! Allez-y et envoyez-moi un message. 😄
+            Hi, welcome to ChatBot! Go ahead and send me a message. 😄
           </div>
         </div>
       </div>
 
     </main>
-  
-      
-    </div>
+
     <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Poser une question ...">
-      <button type="submit" class="msger-send-btn">Envoyer</button>
+      <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+      <button type="submit" class="msger-send-btn">Send</button>
     </form>
-    
   </section>
   <!-- partial -->
   <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
@@ -72,9 +53,9 @@
 
 
     // Icons made by Freepik from www.flaticon.com
-    const BOT_IMG = "static/chat-bot-ai-and-customer-service-support-concept-vector-flat-person-vector-id1221348467-3653060069.jpeg";
+    const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
     const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-    const BOT_NAME = "    UIT Assist";
+    const BOT_NAME = "    ChatBot";
     const PERSON_NAME = "You";
 
     msgerForm.addEventListener("submit", event => {

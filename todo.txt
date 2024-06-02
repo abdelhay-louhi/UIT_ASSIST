@@ -1,2 +1,21 @@
-this is a test of a todo list 
+Todo list 
+
 task1 : 
+
+    uit_assisit_report: 
+        make update and modifications in overleaf
+            https://www.overleaf.com/7511283379vjrpwhxzsgbs#1f1a8c
+
+task 2 :
+
+    web application (uitBot)
+
+        Design updgrade
+        Add pages  
+            add a section: used technologies
+            add a section: contact us
+            add a section: use uit_assist (maybe)
+
+task 3 :
+
+    make a presentation on canva and share the link for collaborative working.

@@ -2,7 +2,15 @@
 
 UIT ASSIST an AI chatbot for to answer queries about the faculty of science of Ibn Tofail University.
 
+![UIT ASSIST Logo](templates/uit_assist_logo.jpg)
+
 ## requirements
+
+We recommend using a virtual environment:
+    - with pip `pip venv -m your_venv_name`
+    (you can also use 'conda')
+
+Then you can install, these python3 packages:
 
 `absl-py==2.1.0`  
 `astunparse==1.6.3`  

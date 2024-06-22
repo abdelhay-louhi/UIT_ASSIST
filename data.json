@@ -12,8 +12,6 @@
         "Bonne journée"
       ],
       "responses": [
-        "Bonjour, merci de demander",
-        "Content de vous revoir",
         "Salut, comment puis-je vous aider ?"
       ],
       "context": [
@@ -30,8 +28,6 @@
         "À la prochaine"
       ],
       "responses": [
-        "Au revoir !",
-        "Bonne journée",
         "Au revoir ! Revenez bientôt."
       ],
       "context": [
@@ -48,9 +44,7 @@
         "Merci de m'avoir aidé"
       ],
       "responses": [
-        "Ravi de pouvoir aider !",
-        "De rien !",
-        "Avec plaisir"
+        "Ravi de pouvoir aider !"
       ],
       "context": [
         ""
@@ -60,9 +54,7 @@
       "tag": "noanswer",
       "patterns": [],
       "responses": [
-        "Désolé, je ne peux pas vous comprendre",
-        "Veuillez me donner plus d'informations",
-        "Je ne suis pas sûr de comprendre"
+        "Veuillez me donner plus d'informations"
       ],
       "context": [
         ""
@@ -78,8 +70,7 @@
         "Quel soutien est offert pour les étudiants de la faculté des sciences Ibn Tofail à Kénitra ?"
       ],
       "responses": [
-        "Je peux répondre à vos questions sur la faculté des sciences Ibn Tofail à Kénitra, y compris les programmes d'études, les départements, les installations, les services aux étudiants, etc.",
-        "Je suis là pour vous aider avec tout ce que vous voulez savoir sur la faculté des sciences Ibn Tofail à Kénitra. N'hésitez pas à me poser vos questions !"
+        "Je peux répondre à vos questions sur la faculté des sciences Ibn Tofail à Kénitra, y compris les programmes d'études, les départements, les installations, les services aux étudiants, etc."
       ],
       "context": [
         ""
@@ -103,14 +94,13 @@
     {
       "tag": "uni_contact",
       "patterns": [
-        "ecomment contacter la faculté ?",
+        "comment contacter la faculté ?",
         "pouvez-vous me fournir les contacts de la faculté ?",
         "coordonnées de la faculté ?",
         "comment parler à l'administration ?"
       ],
       "responses": [
-        "email : contact.fsk@uit.ac.ma",
-        "tel : (+212) 5 37 32 94 00"
+        "email : contact.fsk@uit.ac.ma, tel : (+212) 5 37 32 94 00"
       ],
       "context": [
         ""

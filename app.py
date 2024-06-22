@@ -6,12 +6,15 @@ import pickle
 import numpy as np
 
 from keras.models import load_model
-model = load_model('model.h5')
+model = load_model('my_model.keras')
 import json
 import random
 intents = json.loads(open('data.json').read())
 words = pickle.load(open('texts.pkl','rb'))
 classes = pickle.load(open('labels.pkl','rb'))
+
+from flask import Flask, render_template, request
+
 
 def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
@@ -63,8 +66,6 @@ def chatbot_response(msg):
     res = getResponse(ints, intents)
     return res
 
-
-from flask import Flask, render_template, request
 
 app = Flask(__name__)
 app.static_folder = 'static'

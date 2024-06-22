@@ -30,7 +30,7 @@ Questions that UIT ASSIST should be able to answer:
 
     dates and deadlines 
 
-    contact info (email, phone numbers)
+    contact info (email, phone_numbers)
         emails of responsibles 
         emails of professors 
 

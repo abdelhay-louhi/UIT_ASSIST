@@ -1,15 +1,17 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
+
 import json
 import pickle
-
-import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD
 import random
+import numpy as np
 
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import SGD
+
+lemmatizer = WordNetLemmatizer()
 words=[]
 classes = []
 documents = []
@@ -39,15 +41,6 @@ words = sorted(list(set(words)))
 
 # sort classes
 classes = sorted(list(set(classes)))
-
-# words = all words, vocabulary
-print (len(words), "unique lemmatized words", words)
-
-# documents = combination between patterns and intents
-print (len(documents), "documents")
-
-# classes = intents
-print (len(classes), "classes", classes)
 
 pickle.dump(words, open('texts.pkl','wb'))
 pickle.dump(classes, open('labels.pkl','wb'))
@@ -104,4 +97,4 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 #fitting and saving the model 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
 model.save('my_model.keras')
-print("model created")
+print("Model created")

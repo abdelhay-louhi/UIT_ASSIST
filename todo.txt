@@ -19,3 +19,8 @@ task 2 :
 task 3 :
 
     make a presentation on canva and share the link for collaborative working.
+
+// data.json structure 
+    data = intents = intent1, intent2, 
+                   = [ tag1, tag2, ... ], ....
+                   = [ {tag, pattern, response}, ... ], ...

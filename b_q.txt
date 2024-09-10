@@ -36,3 +36,21 @@ Questions that UIT ASSIST should be able to answer:
 
     links of academic websites
 
+
+
+{
+      "tag": "departement",
+      "patterns": [
+        "quwelle sont les dipartmemts d=is ",
+        "Comment ça va",
+        "Y a-t-il quelqu'un ?",
+        "Salut",
+        "Hola",
+        "Bonjour",
+        "Bonne journée"
+      ],
+      "responses": [
+        "les ",
+      ]
+},
+
